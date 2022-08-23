@@ -12,7 +12,8 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-lineage \
+    $(LOCAL_PATH)/overlay-xd
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
