@@ -8,17 +8,19 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Xdroid stuff.
+$(call inherit-product, vendor/xdroid/config/common.mk)
 
 # Inherit from apollon device
 $(call inherit-product, device/xiaomi/apollon/device.mk)
 
-PRODUCT_NAME := lineage_apollon
+PRODUCT_NAME := xdroid_apollon
 PRODUCT_DEVICE := apollon
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Xiaomi Mi 10T
+TARGET_GAPPS_ARCH := arm64
+XDROID_BOOT_DARK := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
